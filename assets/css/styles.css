@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #49d0b0;
+}
+
+header {
+  position: relative;
+}
+
+ul li {
+  list-style: none;
+}
+
+:root {
+  --primary-text-color: #fff;
+  --secondary-text-color: #808080;
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons {
+  margin: 2rem 2rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary-text-color);
+}
+
+.informations {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem;
+}
+
+.name {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  color: var(--primary-text-color);
+  font-weight: 900;
+}
+
+.types {
+  display: flex;
+}
+
+.types span {
+  color: var(--primary-text-color);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  text-transform: capitalize;
+  background-color: rgb(98, 224, 201);
+  margin: 1rem;
+}
+
+.pokemon-id {
+  color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+.pokemon-image {
+  position: relative;
+  z-index: 2;
+  top: 2rem;
+}
+
+.content-container {
+  background-color: var(--primary-text-color);
+  border-radius: 2.5rem 2.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.tabs {
+  margin: 3rem;
+  padding: 1rem;
+}
+
+.tabs ul {
+  display: flex;
+  justify-content: space-between;
+  color: var(--secondary-text-color);
+  text-transform: capitalize;
+}
+
+.specie-information {
+  display: grid;
+  grid: "information" "information-right";
+  grid-template-columns: 1fr 3fr;
+}
+
+.breeding {
+  font-size: 1.5rem;
+  margin: 1rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.information-text {
+  color: var(--secondary-text-color);
+  margin-left: 1rem;
+  text-transform: capitalize;
+}
+
+.information-text li {
+  margin-bottom: 1rem;
+}
+
+.information-text-right {
+  text-align: center;
+  text-transform: capitalize;
+  text-align: start;
+}
+
+.information-text-right li {
+  margin-bottom: 1rem;
+}
+
+.information-text span {
+  display: block;
+}
+
+.gender #male{
+    color: #1c0ee6;
+    margin-right: 0.5rem;
+}
+
+.gender #female{
+    color: #e60e1c;
+    margin-right: 0.5rem;
+}
+
+.gender span{
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 22rem){
+    .tabs ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
