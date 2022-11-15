@@ -32,6 +32,20 @@ ul li {
   color: var(--primary-text-color);
 }
 
+.icons i {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.icons i:hover {
+  background-color: rgba(235, 233, 233, 0.35);
+  border-radius: 2rem;
+}
+
+.icons i:nth-child(2):hover {
+  color: red;
+}
+
 .informations {
   display: flex;
   justify-content: space-between;
@@ -73,7 +87,6 @@ ul li {
   margin: 0 auto;
 }
 
-
 .pokemon-image {
   position: relative;
   z-index: 2;
@@ -95,6 +108,7 @@ ul li {
 
 .tabs ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   color: var(--secondary-text-color);
   text-transform: capitalize;
@@ -137,23 +151,23 @@ ul li {
   display: block;
 }
 
-.gender #male{
-    color: #1c0ee6;
-    margin-right: 0.5rem;
+.gender #male {
+  color: #1c0ee6;
+  margin-right: 0.5rem;
 }
 
-.gender #female{
-    color: #e60e1c;
-    margin-right: 0.5rem;
+.gender #female {
+  color: #e60e1c;
+  margin-right: 0.5rem;
 }
 
-.gender span{
-    margin-right: 0.5rem;
+.gender span {
+  margin-right: 0.5rem;
 }
 
-@media (max-width: 22rem){
-    .tabs ul{
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 22rem) {
+  .tabs ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
